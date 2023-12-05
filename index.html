@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Addiction
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<!--nav-->
+	<div class="primary-nav">
+		<button class="hamburger open-panel nav-toggle">
+		</button>
+		<nav role="navigation" class="menu">
+			<a class="logotype" href="../index.html">Addiction</a>
+			<div class="overflow-container">
+				<ul class="menu-dropdown">
+					<li id="content1"><a href="../1/index.html">Hallucination</a></li>
+					<li id="content2"><a href="../2/index.html">Anxiety</a><li>
+					<li id="content3"><a href="../3/index.html">Neural Interference</a></li>
+					<li id="content4"><a href="../4/index.html">Fall Apart</a></li>
+				</ul>
+			</div>
+			<p>
+			Copyright &copy;2023. 김병준<br>
+			2023-2 Web-interaction
+			</p>
+		</nav>
+	</div>
+
+	<!-- 경고문 -->
+	<div class="alert">
+			<h1>경고: 시작 전 자세히 읽어주세요</h1>
+			<p>번쩍이는 빛이나 무늬와 같은 시각적 이미지에 노출될 시 발작을 일으킬 수 있습니다.<br>광과민성 발작은 환각, 눈이나 얼굴의 경련, 팔이나 다리의 경련이나 떨림, 방향 감각 상실,<br> 정신 착란, 일시적인 의식 상실등과 같은 여러가지 증상으로 나타날수 있습니다.<br><br>이런 증상 중 한가지라도 나타나게 되면 즉시 이용을 중지하고 휴식을 취하세요.</p>
+			<h3>- 조명이 밝은 곳에서 이용을 하십시오<br>
+			- 피곤할 때는 이용을 하지마십시오</h3>
+			<button id="startbutton">시작하기</a></button>
+			<img src="caution.png" class="caution">
+	</div>
+	<script src="https://pixijs.download/v5.3.10/pixi.min.js">
+		import * as PIXI from 'pixi.js';
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js">
+	</script>
+	<script type="text/javascript">
+		//nav//
+		document.querySelector('.nav-toggle').addEventListener('click', function() {
+  				document.querySelector('.primary-nav').classList.toggle('openNav');
+		});
+		document.getElementById('startbutton').addEventListener('click', function() {
+            window.location.href = './1/index.html';
+        });
+	</script>
+</body>
+</html>
